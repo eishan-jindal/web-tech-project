@@ -1,0 +1,357 @@
+<!--Visitor's Homepage
+Last Updated: Sat, Oct 29,2016
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="css/w3.css">
+<link rel="stylesheet" href="/home/ea/Desktop/PROJECT X/font-awesome-4.6.3/css/font-awesome.min.css">
+
+<style type="text/css">
+	.w3-badge {height:13px;width:13px;padding:0}
+</style>
+
+</head>
+<body style="background-color:white;">
+<!--loginmodal-->
+
+  <div id="loginmodal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-indigo w3-center w3-padding-32"> 
+        <h2 class="w3-wide"><i class="fa fa-user w3-margin-right"></i>Member Login</h2>
+      </header>
+      <div class="w3-container">
+        <a href="http://www.facebook.com" style="text-decoration:none;"><div class="w3-banner w3-grey w3-text-white w3-center w3-padding-8 w3-hover w3-hover-black">Not a member yet? Click Here to SignUp with Facebook </div></a>
+
+        <form action="/login" method="POST">
+        <p><label><strong>Enter ID</strong></label></p>
+        <input id="name" name="name" class="w3-input w3-border" type="text" placeholder="e.g 15BIT0361">
+        <p><label><strong> Password </strong></label></p>
+        <input id="pwd" name="pwd" class="w3-input w3-border" type="password" placeholder="Enter Password" required>
+        <button type="submit" class="w3-btn-block w3-teal w3-padding-12 w3-section w3-right  w3-xlarge";">Login <i class="fa fa-sign-in"></i></button>
+        <button class="w3-btn w3-red w3-section" onclick="document.getElementById('loginmodal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        </form>
+
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+<div>
+
+<!--Navigation Bar-->
+
+	<div>
+	<ul class="w3-navbar w3-white w3-card-8 w3-border">
+		<li class=""><a href="#" class="w3-button w3-hover-blue" onclick="location.reload();"><i class="fa fa-home"></i>  FEPSI</a></li>
+		<li class="w3-right"><a href="javascript:void(0)" onclick="document.getElementById('loginmodal').style.display='block'" class="w3-hover-indigo">Login/Signup</a></li>
+		<li class="w3-right"><a href="#contact" class="w3-hover-white w3-hover-text-blue">Contact us</a></li>
+		<li class="w3-dropdown-hover w3-right"><a href="#" class="w3-hover-white w3-hover-text-blue">Projects <i class="fa fa-caret-down"></i></a>
+			<div class="w3-dropdown-content w3-card-2">
+				<a class="w3-hover-white w3-hover-text-blue" href="#soch">Soch</a>
+				<a class="w3-hover-white w3-hover-text-blue" href="#ullas">Ullas</a>
+				<a class="w3-hover-white w3-hover-text-blue" href="#gll">GLL</a>
+			</div>
+		</li>
+		<li class="w3-right"><a href = "#events" class="w3-hover-white w3-hover-text-blue">Events</a></li>
+	</ul>
+	</div>
+	<!--image background-->
+	<div class="w3-display-container" style="position:relative;background-color:grey;"><img src="/images/kids.jpg" style="width:100%;height:900px;opacity:0.6;"> 
+    <div style="position:absolute;bottom:0;left:0;right:0;background-color:black;opacity:0.6;color:white;text-align:center;">
+    	<p>
+    		FepSi is an registered NGO and a student chapter in VIT University, formed by self driven individuals who have the vision to be the change they want to see in the world. A group of individuals who work on projects for the betterment of the society and consolidate events  which help us to make the world a better place to live in. Currently the headquarters based at VIT , FepSi has currently opened a new chapter in Chandigarh as well as having a plans for extending with new chapters at various other universities and cities.
+    	</p>
+    </div>
+	</div>
+
+  <!-- RegisterModal1 -->
+  <div id="RegisterModal1" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Ullas Registration</h2>
+      </header>
+      <div class="w3-container">
+        <div class="w3-banner w3-grey w3-text-white w3-center w3-padding-8">Registeration for Outbound Sessions costs Rs.50 /- </div>
+
+        <form action = "/addevent" method="POST">
+        <p><label><i class="fa fa-credit-card"></i> Enter Student ID</label></p>
+        <input name="reg_no" id = "reg_no" class="w3-input w3-border" type="text" placeholder="e.g 15BIT0361">
+        <p><label><i class="fa fa-mobile"></i> Mobile number</label></p>
+        <input name="mobile" id = "mobile" class="w3-input w3-border" type="text" placeholder="Enter Your Contact number">
+        <input type="hidden" name="event_name" value="Ullas" >
+        <button type = "submit" class="w3-btn-block w3-teal w3-padding-12 w3-section w3-right">Register <i class="fa fa-check"></i></button>
+        </form>
+        <button class="w3-btn w3-red w3-section" onclick="document.getElementById('RegisterModal1').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        
+
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+    <!-- RegisterModal2 -->
+  <div id="RegisterModal2" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>GLL Registration</h2>
+      </header>
+      <div class="w3-container">
+        <div class="w3-banner w3-grey w3-text-white w3-center w3-padding-8">Registeration for GLL Sessions costs Rs.100 /- We will contact you for further details. </div>
+
+        <form action = "/addevent" method="POST">
+        <p><label><i class="fa fa-credit-card"></i> Enter Student ID</label></p>
+        <input name="reg_no" class="w3-input w3-border" type="text" placeholder="e.g 15BIT0361">
+        <p><label><i class="fa fa-mobile"></i> Mobile number</label></p>
+        <input name="mobile" class="w3-input w3-border" type="text" placeholder="Enter Your Contact number">
+        <input type="hidden" name="event_name" value="GLL" >
+        <button type="submit" class="w3-btn-block w3-teal w3-padding-12 w3-section w3-right">Register <i class="fa fa-check"></i></button>
+        </form>
+
+        <button class="w3-btn w3-red w3-section" onclick="document.getElementById('RegisterModal2').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+    <!-- RegisterModal3 -->
+  <div id="RegisterModal3" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-8">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>SOCH Registration</h2>
+      </header>
+      <div class="w3-container">
+        <div class="w3-banner w3-grey w3-text-white w3-center w3-padding-8">Soch Events are<span class="w3-tag w3-red w3-margin-left">Totally Free!</span> </div>
+        
+        <form action = "/addevent" method="POST">
+        <p><label><i class="fa fa-credit-card"></i> Enter Student ID</label></p>
+        <input name = "reg_no" class="w3-input w3-border" type="text" placeholder="e.g 15BIT0361">
+        <p><label><i class="fa fa-mobile"></i> Mobile number</label></p>
+        <input name="mobile" class="w3-input w3-border" type="text" placeholder="Enter Your Contact number">
+        <input type="hidden" name="event_name" value="Soch" >
+        <button type="submit" class="w3-btn-block w3-teal w3-padding-12 w3-section w3-right">Register <i class="fa fa-check"></i></button>
+        </form>
+
+        <button class="w3-btn w3-red w3-section" onclick="document.getElementById('RegisterModal3').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Projects -->
+
+<!-- Ullas -->
+  <div id="ullas" class="w3-white w3-content">
+    <div class="w3-container w3-padding-24">
+      	<div class="w3-banner w3-green w3-card-4"><h2 class="w3-wide w3-center">Ullas</h2></div>
+
+	<div class="w3-display-container" style="position:relative;background-color:grey;"><img src="/images/ullas child.jpg" style="width:100%;height:600px;opacity:0.6;"> 
+    <div style="position:absolute;bottom:0;left:0;right:0;background-color:black;opacity:0.6;color:white;text-align:center;">
+    	<p>
+    		"The greatest joy in life is the joy of giving to others" : PROJECT ULLAS
+    	</p>
+    </div>
+	</div>
+
+     	
+<p>
+
+
+The greatest joy in life is the joy of giving to others. A staunch follower of this saying FEPSI came up with Ullas.Ullas is an unprecedented campaign being led by Fepsi which focuses on encouraging people to spread love and share their happiness with the less fortunate. We set out officially with this idea on 25th October, 2013, the birthday of GV Selvam Sir under the guidance of Prof. S Tamil Maran at Brahmapuram Secondary High School, Vellore. Ullas has only grown since then.
+
+We believe that our special days such as our birthdays or festivals, should be shared with people who only dream of happiness. Bringing a smile on other people's face is what we always strive for. We believe in spreading love. We dream to share our happiness with such people and bring a change in their lives, in any way possible. This belief resonates with Albert Einstein words: Happiness is only real when shared.
+
+Apart from this, we take out time to conduct outreaches once every week. We visit orphanages or old age homes and spend time there. We learn from their problems and sufferings and try to give them at least a day full of memories to be cherished forever. After all, Goodness Boomerangs!
+</p>	
+
+      		<p class="w3-opacity w3-center">
+      			<button onclick="document.getElementById('RegisterModal1').style.display='block'" class="w3-btn w3-white w3-hover-red">
+      				<i>Register for our next event here!</i>
+      			</button>
+      		</p>
+
+  	</div>
+  </div>
+  
+  <hr> 
+
+  <!-- Soch -->
+
+  <div id="soch" class="w3-white w3-content">
+    <div class="w3-container w3-padding-24">
+      	<div class="w3-banner w3-indigo w3-card-4"><h2 class="w3-wide w3-center">Soch</h2></div>
+      		<div class="w3-display-container" style="position:relative;background-color:grey;"><img src="/images/outside the box.jpg" style="width:100%;height:600px;opacity:0.6;"> 
+    <div style="position:absolute;bottom:0;left:0;right:0;background-color:black;opacity:0.6;color:white;text-align:center;">
+    	<p>
+    		"A youth without fire is followed by an old age without experience." : PROJECT SOCH
+    	</p>
+    </div>
+	</div>
+
+      		<br>
+
+   
+<p>
+"A youth without fire is followed by an old age without experience."
+
+Fep-Si through its Project Soch - a one of its kind endeavor to bring together motivated and inspired young adults from across the world to deliberate and work towards effective Policy, Change and Development - aims to provide an avenue for free speech and mass recognition of open conversations. It is our 'Call for Action' to the youth worldwide.
+
+Through this initiative we wish to provide a positive stimulus to individuals - the youth - who want to make a difference. We aim to connect various Student Groups, Universities, Colleges, NGO's, Social Organizations and Youth Communities to work together for a better tomorrow by making their voices count.
+ </p>  		
+
+
+       		<p class="w3-opacity w3-center">
+      			<button onclick="document.getElementById('RegisterModal3').style.display='block' " class="w3-btn w3-white w3-hover-red">
+      				<i>Register for our next event here!</i>
+      			</button>
+      		</p>
+
+  	</div>
+  </div>
+
+
+<hr> 
+
+  <!-- GLL -->
+
+
+  <div id="gll" class="w3-white w3-content">
+    <div class="w3-container w3-padding-24">
+      	<div class="w3-banner w3-teal w3-card-4"><h2 class="w3-wide w3-center">Global Leadership Labs</h2></div>
+
+      		<div class="w3-display-container" style="position:relative;background-color:grey;"><img src="/images/gll img.jpg" style="width:100%;height:600px;opacity:0.6;"> 
+    <div style="position:absolute;bottom:0;left:0;right:0;background-color:black;opacity:0.6;color:white;text-align:center;">
+    	<p>
+    		"The greatest joy in life is the joy of giving to others" : PROJECT ULLAS
+    	</p>
+    </div>
+	</div>
+      			<div class="w3-container">
+      				
+      			<p>
+					Global Leadership Labs started on 24th of February, 2015. The first session was an introductory session for Fep-Sians where Prof. JayaPrakash Jala introduced the project and his plan of action for the upcoming sessions It was a a fun filled session with various activities which required deep thinking and reasoning.
+
+					After the registration formalities were completed and the logistical requirements were met, the sessions started officially. As planned by sir, the Wednesdays and Saturdays of every week would witness these labs.
+
+					</p>
+      			</div>
+
+      		<p class="w3-opacity w3-center">
+      			<button onclick="document.getElementById('RegisterModal2').style.display='block' " class="w3-btn w3-white w3-hover-red">
+      				<i>Register for our next event here!</i>
+      			</button>
+      		</p>
+
+
+  	</div>
+  </div>
+
+
+
+	<!--Events-->
+  <div id="events" class="w3-content">
+    <div class="w3-container w3-padding-12">
+      	<div class="w3-banner w3-red"><h2 class="w3-wide w3-center">Events</h2></div>
+
+<!--Image scroll gallery-->
+
+			<div class="w3-content w3-display-container w3-card-12" style="max-width:1000px;">
+  			<img class="mySlides" src="/images/soch.jpg" style="width:100%">
+  			<img class="mySlides" src="/images/gll.jpg" style="width:100%">
+  			<img class="mySlides" src="/images/img4.jpg" style="width:100%">
+  			<div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+    		<div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)" style="cursor:pointer;">&#10094;</div>
+    		<div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)" style="cursor:pointer;">&#10095;</div>
+    		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+    		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+    		<span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  </div>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+</script>
+
+
+
+  	</div>
+  </div>
+  <br>
+  <br>
+
+<!--Contact us-->
+    <div id="contact" class="w3-dark-grey">
+    <div class="w3-container w3-padding-24">
+      	<div class=""><h2 class="w3-wide w3-center">Contact us</h2></div>
+      	<hr>
+      			<div class="w3-container">
+      				
+      			<p>
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+
+					</p>
+      			</div>
+
+      		
+
+
+  	</div>
+  </div>
+
+
+<!--footer-->
+
+<footer class="w3-container w3-padding-16 w3-center w3-black w3-large">
+  <a href="http://www.facebook.com" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i> Facebook</a>
+  <a href="http://www.pinterest.com" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i>  Pinterest</a>
+  <a href="http://www.twitter.com" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i>  Twitter</a>
+  <a href="http://www.flickr.com" class="w3-hover-text-grey"><i class="fa fa-flickr"></i>  Flickr</a>
+  <a href="http://www.linkdin.com" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i>  Linkdin</a>
+  <p class="w3-medium">Powered by <a href="/home/ea/Documents/web-dev/Web_TechDA1/que1/profile.html" target="_blank">EAC</a></p>
+</footer>
+</div>
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }
+}
+</script>  
+</body>
+</html>
