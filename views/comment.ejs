@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="css/w3.css">
+  <title>All member Data</title>
+</head>
+<body>
+  <div>
+  <ul class="w3-navbar w3-white w3-card-4">
+    <li class=""><a href="dbms.html" class="w3-button w3-hover-blue"><i class="fa fa-home"></i>  FEPSI</a></li>
+    <li class="w3-right"><a href="index.html"  class="w3-hover-red">Logout</a></li>
+    <li class="w3-right"><a href="#" class="w3-hover-white w3-hover-text-blue">Report</a></li>
+    <li class="w3-right"><a href="dbms.html" class="w3-hover-white w3-hover-text-blue">Database</a></li>
+    <!--Dropdown Menu-->
+    <li class="w3-dropdown-hover w3-right"><a href="#" class="w3-hover-white w3-hover-text-blue">Works <i class="fa fa-caret-down"></i></a>
+      <div class="w3-dropdown-content w3-card-2">
+        <a href="#" class="w3-hover-white w3-hover-text-blue">Technical</a> <!--Department work-->
+        <a href="#" class="w3-hover-white w3-hover-text-blue">GLL</a> <!--Project work-->
+      </div>
+    </li>
+    <li class="w3-right"><a href = "#" class = "w3-hover-white w3-hover-text-blue"><i class="fa fa-cloud"></i> Drive</a></li>
+    <li class="w3-right"><a href = "#" class= "w3-hover-white w3-hover-text-blue"><i class="fa fa-users"></i> Social Media</a></li>
+    <li class="w3-right"><a href = "http://www.gmail.com" class="w3-hover-white w3-hover-text-blue"><i class="fa fa-envelope"></i> Gmail</a></li>
+    <!--<li class="w3-right"><a href = "#" class="w3-hover-pink"><i class="material-icons w3-large">reply</i> Back to Visitor's Page</a></li> -->
+  </ul>
+  </div>
+<div class="w3-content w3-container">
+  <ul class="quotes w3-container">
+  <% for(var i=0; i<quotes.length; i++) {%>
+    <li class="quote w3-card-4 w3-center">
+    <br>
+      <span><%= quotes[i].msg %></span><br>
+    </li><br>
+  <% } %>
+  </ul>
+  </div>
+</body>
+</html>
