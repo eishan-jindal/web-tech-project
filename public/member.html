@@ -1,0 +1,249 @@
+<!--
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+
+:::::::  Page for FEPSI members.  :::::::
+
+/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\
+  -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="/css/w3.css">
+<link rel="stylesheet" href="/home/ea/Desktop/PROJECT X/font-awesome-4.6.3/css/font-awesome.min.css">
+<style>
+  .w3-theme-l5 {color:#000 !important; background-color:#f5f7f8 !important}
+.w3-theme-l4 {color:#000 !important; background-color:#dfe5e8 !important}
+.w3-theme-l3 {color:#000 !important; background-color:#becbd2 !important}
+.w3-theme-l2 {color:#000 !important; background-color:#9eb1bb !important}
+.w3-theme-l1 {color:#fff !important; background-color:#7d97a5 !important}
+.w3-theme-d1 {color:#fff !important; background-color:#57707d !important}
+.w3-theme-d2 {color:#fff !important; background-color:#4d636f !important}
+.w3-theme-d3 {color:#fff !important; background-color:#435761 !important}
+.w3-theme-d4 {color:#fff !important; background-color:#3a4b53 !important}
+.w3-theme-d5 {color:#fff !important; background-color:#303e45 !important}
+
+.w3-theme-light {color:#000 !important; background-color:#f5f7f8 !important}
+.w3-theme-dark {color:#fff !important; background-color:#303e45 !important}
+.w3-theme-action {color:#fff !important; background-color:#303e45 !important}
+
+.w3-theme {color:#fff !important; background-color:#607d8b !important}
+.w3-text-theme {color:#607d8b !important}
+.w3-border-theme {border-color:#607d8b !important}
+
+.w3-hover-theme:hover {color:#fff !important; background-color:#607d8b !important}
+.w3-hover-text-theme:hover {color:#607d8b !important}
+.w3-hover-border-theme:hover {border-color:#607d8b !important}
+</style>
+</head>
+<body style="background-color:white;">
+<div>
+
+<!--Navigation Bar-->
+	<div>
+	<ul class="w3-navbar w3-white w3-card-4">
+    <li class=""><a href="#" class="w3-button w3-hover-blue" onclick="location.reload();"><i class="fa fa-home"></i>  FEPSI</a></li>
+		<li class="w3-right"><a href="index.html"  class="w3-hover-red">Logout</a></li>
+		<li class="w3-right"><a href="#" class="w3-hover-white w3-hover-text-blue">Report</a></li>
+    <li class="w3-right"><a href="dbms.html" class="w3-hover-white w3-hover-text-blue">Database</a></li>
+    <!--Dropdown Menu-->
+		<li class="w3-dropdown-hover w3-right"><a href="#" class="w3-hover-white w3-hover-text-blue">Works <i class="fa fa-caret-down"></i></a>
+			<div class="w3-dropdown-content w3-card-2">
+				<a href="#" class="w3-hover-white w3-hover-text-blue">Technical</a> <!--Department work-->
+				<a href="#" class="w3-hover-white w3-hover-text-blue">GLL</a> <!--Project work-->
+			</div>
+		</li>
+		<li class="w3-right"><a href = "#" class = "w3-hover-white w3-hover-text-blue"><i class="fa fa-cloud"></i> Drive</a></li>
+    <li class="w3-right"><a href = "#" class= "w3-hover-white w3-hover-text-blue"><i class="fa fa-users"></i> Social Media</a></li>
+    <li class="w3-right"><a href = "http://www.gmail.com" class="w3-hover-white w3-hover-text-blue"><i class="fa fa-envelope"></i> Gmail</a></li>
+    <!--<li class="w3-right"><a href = "#" class="w3-hover-pink"><i class="material-icons w3-large">reply</i> Back to Visitor's Page</a></li> -->
+	</ul>
+	</div>
+
+
+<!-- Page Container -->
+<div class="w3-container w3-content" style="max-width:1400px;margin-top:80px">    
+  <!-- The Grid -->
+  <div class="w3-row">
+    <!-- Left Column -->
+    <div class="w3-col m3">
+      <!-- Profile -->
+      <div class="w3-card-2 w3-round w3-white">
+        <div class="w3-container">
+         
+         <p class="w3-center"><img src="/images/img_avatar3.png" class="w3-circle" style="height:106px;width:106px" alt="Avatar"></p>
+         <h4 class="w3-center">Eishan Jindal</h4>
+         <hr>
+         <p><i class="fa fa-pencil fa-fw w3-margin-right w3-text-theme"></i> Designer, UI</p>
+         <p><i class="fa fa-flag fa-fw w3-margin-right w3-text-theme"></i> GLL, Technical Department</p>
+         <p><i class="fa fa-suitcase fa-fw w3-margin-right w3-text-theme"></i> Board Member</p>
+        </div>
+      </div>
+      <br>
+      
+      <!-- Accordion -->
+      <div class="w3-card-2 w3-round">
+        <div class="w3-accordion w3-white">
+          <button onclick="myFunction('Demo1')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-circle-o-notch fa-fw w3-margin-right"></i> My Pending Work</button>
+          <div id="Demo1" class="w3-accordion-content w3-container">
+            <p>
+              <ul class="w3-ul w3-hoverable">
+                <li><a href="#">Database Updatation</a></li>
+                <li><a href="#">Diwali Poster</a></li>
+                <li><a href="#">Fresher's Review</a></li>
+              </ul>
+            </p>
+          </div>
+          <button onclick="myFunction('Demo2')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-calendar-check-o fa-fw w3-margin-right"></i> My Upcoming Events</button>
+          <div id="Demo2" class="w3-accordion-content w3-container">
+            <p>
+               <ul class="w3-ul w3-hoverable">
+                <li><a href="#">GLL Event 2</a></li>
+                <li><a href="#">Tech Inhouse Workshop</a></li>
+              </ul>             
+            </p>
+          </div>
+          <button onclick="myFunction('Demo3')" class="w3-btn-block w3-theme-l1 w3-left-align"><i class="fa fa-users fa-fw w3-margin-right"></i> My Pics</button>
+          <div id="Demo3" class="w3-accordion-content w3-container">
+         <div class="w3-row-padding">
+         <br>
+           <div class="w3-half">
+             <img src="/images/img_lights.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/images/img_nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/images/img_mountains.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/images/img_forest.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/images/img_nature.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+           <div class="w3-half">
+             <img src="/images/img_fjords.jpg" style="width:100%" class="w3-margin-bottom">
+           </div>
+         </div>
+          </div>
+        </div>      
+      </div>
+      <br>
+    <!-- End Left Column -->
+    </div>
+    
+    <!-- Middle Column -->
+    <div class="w3-col m6">
+    
+      <div class="w3-row-padding">
+        <div class="w3-col m12">
+          <div class="w3-card-2 w3-round w3-white">
+            <div class="w3-container w3-padding">
+
+              <form action="/addcomments" method="POST">
+              <p class="w3-center w3-xlarge"><strong>Post Message to Admin</strong></p><hr>
+              <input type="text" name="msg" placeholder ="Type your message here!" size="30">                       <hr>
+              <button type="submit" class="w3-btn w3-theme"><i class="fa fa-pencil"></i>  Post</button> 
+              </form>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+        <img src="/images/img_avatar2.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">30 min back</span>
+        <h4>John Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <div class="w3-row-padding" style="margin:0 -16px">
+            <div class="w3-half">
+              <img src="/images/img_lights.jpg" style="width:100%" alt="Northern Lights" class="w3-margin-bottom">
+            </div>
+            <div class="w3-half">
+              <img src="/images/img_nature.jpg" style="width:100%" alt="Nature" class="w3-margin-bottom">
+          </div>
+        </div>
+      </div>
+      
+      <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+        <img src="/images/img_avatar5.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">1 day back</span>
+        <h4>Jane Doe</h4><br>
+        <hr class="w3-clear">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>  
+
+      <div class="w3-container w3-card-2 w3-white w3-round w3-margin"><br>
+        <img src="/images/img_avatar6.png" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-right w3-opacity">2 days back</span>
+        <h4>Angie Jane</h4><br>
+        <hr class="w3-clear">
+        <p>Have you seen this?</p>
+        <img src="/images/img_nature.jpg" style="width:100%" class="w3-margin-bottom">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              </div> 
+      
+    <!-- End Middle Column -->
+    </div>
+    
+    <!-- Right Column -->
+    <div class="w3-col m3">
+      <div class="w3-card-2 w3-round w3-white w3-center">
+        <div class="w3-container">
+          <p><strong>Next Inhouse Outbound</strong></p><hr>
+          <div class="w3-image-container" style="position:relative">
+            <img src="/images/img_forest.jpg" alt="Forest" style="width:100%;">
+            <div style="position:absolute;bottom:0;left:0;right:0;background-color:black;opacity:0.6;color:white;text-align:center;">
+              <p>Forest Area</p>
+            </div>
+          </div>
+          <p><button class="w3-btn w3-btn-block w3-teal">Info</button></p>
+        </div>
+      </div>
+      <br>
+
+      <a href="#" style="text-decoration:none;">
+      <div class="w3-card-2 w3-round w3-white w3-padding-32 w3-center w3-hoverable w3-hover-red w3-button">
+        <p><i class="fa fa-bug w3-xxlarge"></i></p><p><strong>KILL THE BUG GAME</strong></p>
+      </div>
+      </a>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+<!-- End Page Container -->
+</div>
+<br>
+
+<!--footer-->
+<footer class="w3-container w3-padding-16 w3-center w3-black w3-large">
+  <a href="http://www.facebook.com" class="w3-hover-text-indigo"><i class="fa fa-facebook-official"></i> Facebook</a>
+  <a href="http://www.pinterest.com" class="w3-hover-text-red"><i class="fa fa-pinterest-p"></i>  Pinterest</a>
+  <a href="http://www.twitter.com" class="w3-hover-text-light-blue"><i class="fa fa-twitter"></i>  Twitter</a>
+  <a href="http://www.flickr.com" class="w3-hover-text-grey"><i class="fa fa-flickr"></i>  Flickr</a>
+  <a href="http://www.linkdin.com" class="w3-hover-text-indigo"><i class="fa fa-linkedin"></i>  Linkdin</a>
+  <p class="w3-medium">Powered by <a href="/home/ea/Documents/web-dev/Web_TechDA1/que1/profile.html" target="_blank">EAC</a></p>
+</footer>
+<script>
+// Accordion
+function myFunction(id) {
+    var x = document.getElementById(id);
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+        x.previousElementSibling.className += " w3-theme-d1";
+    } else { 
+        x.className = x.className.replace("w3-show", "");
+        x.previousElementSibling.className = 
+        x.previousElementSibling.className.replace(" w3-theme-d1", "");
+    }
+}
+</script>     
+</body>
+</html>
